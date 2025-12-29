@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Items List</title>
+</head>
+<body>
+    <h2>Travel Items - Unordered List</h2>
+    <ul>
+        <li>Passport</li>
+        <li>Clothes</li>
+        <li>Toiletries</li>
+        <li>Mobile charger</li>
+        <li>Travel documents</li>
+    </ul>
+
+    <h2>Travel Items - Ordered List</h2>
+    <ol>
+        <li>Passport</li>
+        <li>Clothes</li>
+        <li>Toiletries</li>
+        <li>Mobile charger</li>
+        <li>Travel documents</li>
+    </ol>
+</body>
+</html>
