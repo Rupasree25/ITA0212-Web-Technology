@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animated Effects</title>
+    <style>
+        h1 {
+            animation: colorChange 3s infinite;
+            text-align: center;
+        }
+
+        @keyframes colorChange {
+            0% {color: red;}
+            25% {color: orange;}
+            50% {color: green;}
+            75% {color: blue;}
+            100% {color: purple;}
+        }
+
+        p {
+            animation: moveText 5s infinite alternate;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        @keyframes moveText {
+            from {transform: translateX(0);}
+            to {transform: translateX(300px);}
+        }
+    </style>
+</head>
+<body>
+    <h1>Animated Heading</h1>
+    <p>This paragraph moves back and forth with color changes!</p>
+</body>
+</html>
