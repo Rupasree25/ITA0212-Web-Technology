@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>String Object Example</title>
+</head>
+<body>
+
+<h2 style="text-align:center;">JavaScript String Object</h2>
+<p id="output" style="font-size:18px; text-align:center;"></p>
+
+<script>
+let str1 = "Hello";
+let str2 = "World";
+
+// 1. Character at index 1
+let charAt1 = str1.charAt(1);
+
+// 2. Unicode at index 1
+let unicodeAt1 = str1.charCodeAt(1);
+
+// 3. Join two strings
+let joinedStr = str1.concat(" ", str2);
+
+// 4. Convert unicode to string
+let unicodeToStr = String.fromCharCode(72, 105); // Hi
+
+document.getElementById('output').innerHTML = 
+`Character at index 1: ${charAt1} <br>
+Unicode at index 1: ${unicodeAt1} <br>
+Joined String: ${joinedStr} <br>
+Unicode to String: ${unicodeToStr}`;
+</script>
+
+</body>
+</html>
