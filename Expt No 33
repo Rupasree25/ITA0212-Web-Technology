@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <script type="text/javascript">
+        function validateForm() {
+            const name = document.forms["studentForm"]["name"].value;
+            const email = document.forms["studentForm"]["email"].value;
+            const age = document.forms["studentForm"]["age"].value;
+
+            if (name == "" || email == "" || age == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+            if (isNaN(age) || age < 18 || age > 100) {
+                alert("Enter a valid age between 18 and 100");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form name="studentForm" onsubmit="return validateForm()">
+        Name: <input type="text" name="name"><br><br>
+        Email: <input type="email" name="email"><br><br>
+        Age: <input type="number" name="age"><br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
